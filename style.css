@@ -38,11 +38,14 @@ body {
 }
 
 .top_section .cover {
+  /* background-image: url(./assets/album.jpg) no-repeat, var(--grad-bg); */
+  /* background-image: linear-gradient(to bottom, var(--grad-bg)), url("./assets/album.jpg"); */
   background-image: linear-gradient(to bottom, rgba(56, 56, 56, 0) 80%, rgba(0, 0, 0, 1) 100%),
     url("./assets/album.jpg");
   background-size: cover;
   opacity: 0.5;
   margin: auto;
+  /* background */
   height: 100%;
 }
 
