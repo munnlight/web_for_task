@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 :root {
   --color-light: #fdfdfd;
   --color-blue: #1e90ff;
@@ -9,8 +11,8 @@
   --album-left: 30%;
   --album-top: 24%;
 
-  --released-left: 28%;
-  --relseaed-top: 0%;
+  --released-top: 39%;
+  --released-left: 22.5%;
 }
 
 * {
@@ -29,7 +31,6 @@ body {
 
 .top_section {
   height: 650px;
-  /* width: 1000px; */
 }
 
 .top_section .cover {
@@ -41,31 +42,42 @@ body {
   height: 100%;
 }
 
-/* .top_section .album {
+.top_section .header .album img {
   position: absolute;
   top: var(--album-top);
   left: var(--album-left);
   object-fit: contain;
-  height: 320px;
-} */
-
-.top_section .album img {
-  position: absolute;
-  top: var(--album-top);
-  left: var(--album-left);
-  object-fit: contain;
-  height: 320px;
+  height: 30%;
 }
 
 .top_section .album #released {
-  position: inherit;
+  display: inline;
+  position: absolute;
   font-size: 1rem;
   color: #fff;
   rotate: -90deg;
-  top: -10%;
-  left: 22.5%;
+  top: var(--released-top);
+  left: var(--released-left);
 }
 
-.instinct {
+.top_section .header .prof .song {
+  font-family: "Lato", sans-serif;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.top_section .header .prof .artist {
+  font-family: "Lato", sans-serif;
+  font-size: 1.9rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.top_section .header .prof .profile {
+}
+
+.top_section .instinct {
   color: var(--color-blue);
 }
