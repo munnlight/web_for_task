@@ -62,6 +62,24 @@ body {
   color: #fff;
   list-style-type:none;
 }
+.middle_section{
+  position: absolute;
+  color: #fff;
+  bottom: 10%;
+  left:24%;
+}
+.horiz{
+  display: inline-block;
+}
+.box{
+  position: absolute;
+  top: 80px;
+  background-color: #000;
+  display: inline-block;
+}
 .instinct {
   color: var(--color-blue);
+}
+#inv{
+  filter:invert(100%);
 }
