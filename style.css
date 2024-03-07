@@ -1,0 +1,71 @@
+:root {
+  --color-light: #fdfdfd;
+  --color-blue: #1e90ff;
+  --color-dark: #383838;
+  --color-black: #000000;
+
+  --grad-bg: linear-gradient(180deg, rgba(56, 56, 56, 1) 0%, rgba(0, 0, 0, 1) 40%);
+
+  --album-left: 30%;
+  --album-top: 24%;
+
+  --released-left: 28%;
+  --relseaed-top: 0%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--color-black);
+  border: solid 0.1px #fff;
+  height: 250vh;
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.top_section {
+  height: 650px;
+  /* width: 1000px; */
+}
+
+.top_section .cover {
+  background-image: linear-gradient(to bottom, rgba(56, 56, 56, 0) 80%, rgba(0, 0, 0, 1) 100%),
+    url("./assets/album.jpg");
+  background-size: cover;
+  opacity: 0.3;
+  margin: auto;
+  height: 100%;
+}
+
+/* .top_section .album {
+  position: absolute;
+  top: var(--album-top);
+  left: var(--album-left);
+  object-fit: contain;
+  height: 320px;
+} */
+
+.top_section .album img {
+  position: absolute;
+  top: var(--album-top);
+  left: var(--album-left);
+  object-fit: contain;
+  height: 320px;
+}
+
+.top_section .album #released {
+  position: inherit;
+  font-size: 1rem;
+  color: #fff;
+  rotate: -90deg;
+  top: -10%;
+  left: 22.5%;
+}
+
+.instinct {
+  color: var(--color-blue);
+}
