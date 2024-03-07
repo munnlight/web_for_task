@@ -5,12 +5,7 @@
   --color-black: #000000;
 
   --grad-bg: linear-gradient(180deg, rgba(56, 56, 56, 1) 0%, rgba(0, 0, 0, 1) 40%);
-
-  --album-left: 30%;
-  --album-top: 24%;
-
-  --released-left: 28%;
-  --relseaed-top: 0%;
+  /* --grad-bg: linear-gradient(180deg, #383838 0, #000000 23%); */
 }
 
 * {
@@ -33,39 +28,40 @@ body {
 }
 
 .top_section .cover {
+  /* background-image: url(./assets/album.jpg) no-repeat, var(--grad-bg); */
+  /* background-image: linear-gradient(to bottom, var(--grad-bg)), url("./assets/album.jpg"); */
   background-image: linear-gradient(to bottom, rgba(56, 56, 56, 0) 80%, rgba(0, 0, 0, 1) 100%),
     url("./assets/album.jpg");
   background-size: cover;
   opacity: 0.3;
   margin: auto;
+  /* background */
   height: 100%;
 }
 
-/* .top_section .album {
-  position: absolute;
-  top: var(--album-top);
-  left: var(--album-left);
-  object-fit: contain;
-  height: 320px;
-} */
-
 .top_section .album img {
   position: absolute;
-  top: var(--album-top);
-  left: var(--album-left);
+  top: 200px;
+  left: 24%;
   object-fit: contain;
   height: 320px;
 }
 
 .top_section .album #released {
-  position: inherit;
+  position: absolute;
   font-size: 1rem;
   color: #fff;
   rotate: -90deg;
-  top: -10%;
-  left: 22.5%;
+  top: 380px;
+  left: 16%;
 }
-
+.top_section .menu #topdown{
+  position: absolute;
+  right: 18%;
+  top: 7%;
+  color: #fff;
+  list-style-type:none;
+}
 .instinct {
   color: var(--color-blue);
 }
