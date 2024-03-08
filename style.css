@@ -97,7 +97,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
 
-  margin-right: 40px;
+  margin: 0 20px 0 10px;
 }
 
 .top_section .header .prof .profile #prof2 img {
@@ -118,6 +118,7 @@ body {
 .top_section .header .prof .buttons .btn {
   border: 1px solid #fff;
   color: #fff;
+  cursor: pointer;
   font-family: "Lato", sans-serif;
   font-size: 0.8rem;
   font-weight: 800;
@@ -128,8 +129,22 @@ body {
 
 .top_section .header .prof .buttons #btn1 {
   background: var(--color-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_section .header .prof .buttons #btn2 {
 }
 
 .top_section .instinct {
   color: var(--color-green);
+}
+
+.top_section .menu #topdown {
+  position: absolute;
+  right: 18%;
+  top: 7%;
+  color: #fff;
+  list-style-type: none;
 }
