@@ -180,6 +180,28 @@ li {
   margin-right: 30px;
   margin-left: 140px;
 }
+.box1{
+  position: flex;
+  margin-top: 30px;
+  background-color: #000;
+  display: flex;
+  margin-right: 30px;
+  font-family: "Maven Pro", monospace;
+}
+.box1 img{
+  padding: 20px;
+  margin-left: -20px;
+  width: 200px;
+  height: 200px;
+}
+.box1 #topText{
+  font-weight:bold;
+  font-size: 20px;
+}
+.box1 #bottomText{
+  font-weight:lighter;
+  font-size: 10px;
+}
 .box img{
   width: 40px;
   height: 40px;
@@ -194,14 +216,23 @@ li {
   font-size: 45px;
 }
 .middle_section #trackText{
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 100px;
   margin-left: 140px;
   font-family: "Maven Pro", monospace;
   font-size: 40px;
 }
+
+.bottom_section{
+  position: flex;
+  color: #fff;
+  bottom: 10%;
+  margin-left: 140px;
+}
+.bottom_section #releaseText{
+  font-family: "Maven Pro", monospace;
+  font-size: 45px;
+}
 #inv {
   filter: invert(100%);
-}
-#inv{
-  filter:invert(100%);
 }
