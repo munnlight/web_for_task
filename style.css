@@ -20,6 +20,7 @@
 }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -34,46 +35,51 @@ body {
 }
 
 .top_section {
-  height: 650px;
+  height: 560px;
 }
 
-.top_section .cover {
-  /* background-image: url(./assets/album.jpg) no-repeat, var(--grad-bg); */
-  /* background-image: linear-gradient(to bottom, var(--grad-bg)), url("./assets/album.jpg"); */
-  background-image: linear-gradient(to bottom, rgba(56, 56, 56, 0) 80%, rgba(0, 0, 0, 1) 100%),
-    url("./assets/album.jpg");
+.top_section .container {
+  background: linear-gradient(to bottom, rgba(56, 56, 56, 0.6) 40%, rgba(0, 0, 0, 1) 100%), url(./assets/album.jpg);
   background-size: cover;
-  opacity: 0.5;
-  margin: auto;
-  /* background */
   height: 100%;
+
+  margin: auto;
 }
 
-.top_section .header .album img {
-  position: absolute;
-  top: var(--album-top);
-  left: var(--album-left);
-  object-fit: contain;
-  height: 30%;
+.top_section .container .content {
+  display: flex;
 }
 
-.top_section .album #released {
-  display: inline;
-  position: absolute;
-  font-size: 1rem;
+.top_section .container .content .leftside {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  padding-top: 170px;
+  margin-left: 5rem;
+}
+
+.top_section .container .content .leftside div p {
+  flex: 1;
+  font-size: 0.9rem;
   color: #fff;
+  transform-origin: bottom left;
   rotate: -90deg;
-  top: var(--released-top);
-  left: var(--released-left);
+  padding-left: 27px;
 }
 
-.top_section .header .prof {
-  position: absolute;
-  top: var(--profile-top);
-  left: var(--profile-left);
+.top_section .container .content .leftside img {
+  flex: 2;
+  width: 300px;
 }
 
-.top_section .header .prof .song {
+.top_section .container .content .rightside {
+  flex: 1;
+
+  padding-top: 170px;
+}
+
+.top_section .container .content .rightside .song {
   font-family: "Lato", sans-serif;
   -webkit-text-stroke: 1px #fff;
   color: transparent;
@@ -82,66 +88,97 @@ body {
   letter-spacing: 2px;
 }
 
-.top_section .header .prof .artist {
+.top_section .container .content .rightside .artist {
   font-family: "Lato", sans-serif;
   font-size: 1.9rem;
   color: #fff;
   font-weight: 800;
-
-  margin-bottom: 1.4rem;
 }
 
-.top_section .header .prof .profile #prof1 img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: 50%;
-
-  margin: 0 20px 0 10px;
-}
-
-.top_section .header .prof .profile #prof2 img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.top_section .header .prof .profile .container {
+.top_section .container .content .rightside .profile {
   display: flex;
+  margin: 1rem 0;
 }
 
-.top_section .header .prof .buttons {
-  display: flex;
+.top_section .container .content .rightside .profile img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 70px;
+
+  margin: 0rem 0.4rem;
 }
 
-.top_section .header .prof .buttons .btn {
-  border: 1px solid #fff;
-  color: #fff;
-  cursor: pointer;
-  font-family: "Lato", sans-serif;
-  font-size: 0.8rem;
+.top_section .container .content .rightside .buttons {
   font-weight: 800;
+  color: #fff;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.top_section .container .content .rightside .buttons .btn {
+  display: flex;
+  gap: 0.2rem;
 
   padding: 0.5rem 1rem;
-  margin: 1em 0.25rem;
 }
 
-.top_section .header .prof .buttons #btn1 {
+#btn1 {
   background: var(--color-green);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.top_section .instinct {
+#btn2 {
+  border: 1px solid #fff;
+}
+
+.instinct {
   color: var(--color-green);
 }
 
+li {
+  margin: 0.5rem 0;
+}
+
+.hamburger {
+  margin-bottom: 2rem;
+}
+
+/**/
+
 .top_section .menu #topdown {
-  position: absolute;
-  right: 18%;
-  top: 7%;
   color: #fff;
   list-style-type: none;
+
+  padding: 20px 45px 0 0;
+}
+
+.top_section .menu #topdown li a img {
+  width: 22px;
+  margin-left: 2px;
+}
+
+.top_section .menu #topdown .hamburger a img {
+  width: 30px;
+  margin: 0;
+}
+.middle_section {
+  position: absolute;
+  color: #fff;
+  bottom: 10%;
+  left: 24%;
+}
+.horiz {
+  display: inline-block;
+}
+.box {
+  position: absolute;
+  top: 80px;
+  background-color: #000;
+  display: inline-block;
+}
+
+#inv {
+  filter: invert(100%);
 }
