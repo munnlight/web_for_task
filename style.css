@@ -182,3 +182,6 @@ li {
 #inv {
   filter: invert(100%);
 }
+#inv{
+  filter:invert(100%);
+}
