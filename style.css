@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 :root {
@@ -162,7 +162,6 @@ li {
   margin-left: 2px;
 }
 
-
 .top_section .menu #topdown .hamburger a img {
   width: 30px;
   margin: 0;
@@ -177,13 +176,12 @@ li {
   display: inline-block;
 }
 .box {
-
   background-color: #000;
   display: flex;
   margin-right: 30px;
   margin-left: 140px;
 }
-.box1{
+.box1 {
   position: flex;
   margin-top: 30px;
   background-color: #000;
@@ -191,19 +189,19 @@ li {
   margin-right: 30px;
   font-family: "Maven Pro", monospace;
 }
-.box1 img{
+.box1 img {
   padding: 20px;
   margin-left: -20px;
   width: 150px;
   height: 150px;
   margin: 0;
 }
-.box1 #topText{
-  font-weight:bold;
+.box1 #topText {
+  font-weight: bold;
   font-size: 20px;
 }
-.box1 #bottomText{
-  font-weight:lighter;
+.box1 #bottomText {
+  font-weight: lighter;
   font-size: 10px;
 }
 
@@ -214,13 +212,13 @@ li {
   margin: 0px;
   padding: 10px;
 }
-.middle_section #streamText{
+.middle_section #streamText {
   margin-bottom: 10px;
   margin-left: 140px;
-  font-family:  "Maven Pro", monospace;
+  font-family: "Maven Pro", monospace;
   font-size: 45px;
 }
-.middle_section #trackText{
+.middle_section #trackText {
   margin-top: 20px;
   margin-bottom: 100px;
   margin-left: 140px;
@@ -228,13 +226,13 @@ li {
   font-size: 40px;
 }
 
-.bottom_section{
+.bottom_section {
   position: flex;
   color: #fdfdfd;
   bottom: 10%;
   margin-left: 140px;
 }
-.bottom_section #releaseText{
+.bottom_section #releaseText {
   font-family: "Maven Pro", monospace;
   font-size: 45px;
 }
@@ -251,3 +249,39 @@ li {
   filter: invert(100%);
 }
 
+#track_list {
+  /* display: flex; */
+  color: #fff;
+  width: 72%;
+
+  margin: auto;
+}
+
+#track_list h2 {
+  font-size: 2rem;
+
+  margin: 2.5rem 0 2.2rem 0;
+}
+
+#track_list .container .tracks {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 3fr 5fr 1fr 1fr;
+  font-family: "Lato";
+
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+#track_list .container .tracks img:nth-child(2) {
+  width: 1.6rem;
+}
+
+#track_list .container .tracks .names .singer {
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+#track_list .container .tracks .names .song {
+  font-weight: 550;
+}
