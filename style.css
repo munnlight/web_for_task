@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap");
+
 :root {
   --color-light: #fdfdfd;
   --color-blue: #1e90ff;
@@ -164,7 +166,7 @@ li {
   margin: 0;
 }
 .middle_section {
-  position: absolute;
+  position: flex;
   color: #fff;
   bottom: 10%;
   left: 24%;
@@ -173,12 +175,45 @@ li {
   display: inline-block;
 }
 .box {
-  position: absolute;
-  top: 80px;
   background-color: #000;
-  display: inline-block;
+  display: flex;
+  margin-right: 30px;
+  margin-left: 140px;
+}
+
+.box img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  margin: 0;
+  padding: 5px;
+}
+.middle_section #streamText {
+  margin-bottom: 10px;
+  margin-left: 140px;
+  font-family: "Maven Pro", monospace;
+  font-size: 45px;
+}
+.middle_section #trackText {
+  margin-top: 30px;
+  margin-left: 140px;
+  font-family: "Maven Pro", monospace;
+  font-size: 40px;
 }
 
 #inv {
   filter: invert(100%);
+}
+
+#track_list {
+  /* display: flex; */
+  color: #fff;
+
+  padding: 5rem;
+}
+
+#track_list .container .tracks {
+  align-items: center;
+  display: flex;
+  /* flex-direction: column; */
 }
