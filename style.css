@@ -191,7 +191,7 @@ li {
 }
 .box1 img {
   padding: 20px;
-  margin-left: -20px;
+  margin-left: 0px;
   width: 150px;
   height: 150px;
   margin: 0;
@@ -199,10 +199,12 @@ li {
 .box1 #topText {
   font-weight: bold;
   font-size: 20px;
+  margin-left: 15px;
 }
 .box1 #bottomText {
   font-weight: lighter;
   font-size: 10px;
+  margin-left: 15px;
 }
 
 .box img{
