@@ -180,6 +180,28 @@ li {
   margin-right: 30px;
   margin-left: 140px;
 }
+.box1 {
+  position: flex;
+  margin-top: 30px;
+  background-color: #000;
+  display: flex;
+  margin-right: 30px;
+  font-family: "Maven Pro", monospace;
+}
+.box1 img {
+  padding: 20px;
+  margin-left: -20px;
+  width: 200px;
+  height: 200px;
+}
+.box1 #topText {
+  font-weight: bold;
+  font-size: 20px;
+}
+.box1 #bottomText {
+  font-weight: lighter;
+  font-size: 10px;
+}
 
 .box img {
   width: 40px;
@@ -195,12 +217,23 @@ li {
   font-size: 45px;
 }
 .middle_section #trackText {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 100px;
   margin-left: 140px;
   font-family: "Maven Pro", monospace;
   font-size: 40px;
 }
 
+.bottom_section {
+  position: flex;
+  color: #fff;
+  bottom: 10%;
+  margin-left: 140px;
+}
+.bottom_section #releaseText {
+  font-family: "Maven Pro", monospace;
+  font-size: 45px;
+}
 #inv {
   filter: invert(100%);
 }
@@ -208,12 +241,36 @@ li {
 #track_list {
   /* display: flex; */
   color: #fff;
+  width: 72%;
 
-  padding: 5rem;
+  margin: auto;
+}
+
+#track_list h2 {
+  font-size: 2rem;
+
+  margin: 2.5rem 0 2.2rem 0;
 }
 
 #track_list .container .tracks {
   align-items: center;
-  display: flex;
-  /* flex-direction: column; */
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 3fr 5fr 1fr 1fr;
+  font-family: "Lato";
+
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+#track_list .container .tracks img:nth-child(2) {
+  width: 1.6rem;
+}
+
+#track_list .container .tracks .names .singer {
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+#track_list .container .tracks .names .song {
+  font-weight: 550;
 }
