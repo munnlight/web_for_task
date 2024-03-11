@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 :root {
   --color-light: #fdfdfd;
   --color-blue: #1e90ff;
@@ -27,7 +28,7 @@
 
 body {
   background: var(--color-black);
-  border: solid 0.1px #fff;
+  border: solid 0.1px #fdfdfd;
   height: 250vh;
   max-width: 1000px;
 
@@ -62,7 +63,7 @@ body {
 .top_section .container .content .leftside div p {
   flex: 1;
   font-size: 0.9rem;
-  color: #fff;
+  color: #fdfdfd;
   transform-origin: bottom left;
   rotate: -90deg;
   padding-left: 27px;
@@ -81,7 +82,7 @@ body {
 
 .top_section .container .content .rightside .song {
   font-family: "Lato", sans-serif;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px #fdfdfd;
   color: transparent;
   font-size: 3rem;
   font-weight: 800;
@@ -91,7 +92,7 @@ body {
 .top_section .container .content .rightside .artist {
   font-family: "Lato", sans-serif;
   font-size: 1.9rem;
-  color: #fff;
+  color: #fdfdfd;
   font-weight: 800;
 }
 
@@ -110,7 +111,7 @@ body {
 
 .top_section .container .content .rightside .buttons {
   font-weight: 800;
-  color: #fff;
+  color: #fdfdfd;
   display: flex;
   gap: 0.5rem;
 }
@@ -130,7 +131,7 @@ body {
 }
 
 #btn2 {
-  border: 1px solid #fff;
+  border: 1px solid #fdfdfd;
 }
 
 .instinct {
@@ -148,7 +149,7 @@ li {
 /**/
 
 .top_section .menu #topdown {
-  color: #fff;
+  color: #fdfdfd;
   list-style-type: none;
 
   padding: 20px 45px 0 0;
@@ -165,7 +166,7 @@ li {
 }
 .middle_section {
   position: flex;
-  color: #fff;
+  color: #fdfdfd;
   bottom: 10%;
   left: 24%;
 }
@@ -204,11 +205,11 @@ li {
   font-size: 10px;
 }
 .box img{
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 2px solid black;
-  margin: 0;
-  padding: 5px;
+  margin: 0px;
+  padding: 10px;
 }
 .middle_section #streamText{
   margin-bottom: 10px;
@@ -226,13 +227,17 @@ li {
 
 .bottom_section{
   position: flex;
-  color: #fff;
+  color: #fdfdfd;
   bottom: 10%;
   margin-left: 140px;
 }
 .bottom_section #releaseText{
   font-family: "Maven Pro", monospace;
   font-size: 45px;
+}
+.nowrap{
+  font-family: "Rajdhani", monospace;
+  font-style: italic;
 }
 #inv {
   filter: invert(100%);
