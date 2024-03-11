@@ -3,37 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web_for_task</title>
+    <title>flexing</title>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
   </head>
   <body>
     <div class="top_section">
-      <div class="cover"></div>
-      <div class="album">
-        <p id="released"><span class="instinct">Instinct</span> - Released June 04, 2017</p>
-        <img src="./assets/album.jpg" alt="cover" />
-      </div>
-      <div class="menu">
-        <ul id="topdown">
-          <li id="inv"><a href=""><img src="./assets/menu.png" alt="menu"></a></li>
-          <li><a>‎</a></li>
-          <li id="inv"><a href=""><img src="./assets/ig.png" alt="ig"></a></li>
-          <li id="inv"><a href=""><img src="./assets/fb.png" alt="fb"></a></li>
-          <li id="inv"><a href=""><img src="./assets/tiktok.png" alt="tiktok"></a></li>
-          <li id="inv"><a href=""><img src="./assets/youtube.png" alt="yt"></a></li>
-        </ul>
+      <div class="container">
+        <div class="content">
+          <div class="leftside">
+            <div>
+              <img src="./assets/album.jpg" alt="pic" />
+              <p class="nowrap"><span class="instinct">Instinct</span> - Released June 04, 2017</p>
+            </div>
+          </div>
+
+          <div class="rightside">
+            <div class="song"><p>LEVEL DAYS</p></div>
+            <div class="artist">CONRO</div>
+            <div class="profile">
+              <img src="./assets/prof1.jpg" alt="prof1" />
+              <img src="./assets/prof2.jpg" alt="prof2" />
+            </div>
+            <div class="buttons">
+              <div class="btn" id="btn1">
+                <img id="inv" src="./assets/bx-play.svg" alt="" />
+                <p>LISTEN NOW</p>
+              </div>
+              <div class="btn" id="btn2">
+                <img id="inv" src="./assets/bx-share-alt.svg" alt="" />
+                <p>SHARE</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <ul id="topdown">
+              <li id="inv" class="hamburger">
+                <a href=""><img src="./assets/menu.png" alt="menu" /></a>
+              </li>
+              <li><a>‎</a></li>
+              <li id="inv">
+                <a href=""><img src="./assets/ig.png" alt="ig" /></a>
+              </li>
+              <li id="inv">
+                <a href=""><img src="./assets/fb.png" alt="fb" /></a>
+              </li>
+              <li id="inv">
+                <a href=""><img src="./assets/tiktok.png" alt="tiktok" /></a>
+              </li>
+              <li id="inv">
+                <a href=""><img src="./assets/youtube.png" alt="yt" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="middle_section">
       <div id="stream">
-        <h1>STREAM IT YOUR WAY</h1>
+        <h1 id="streamText">STREAM IT YOUR WAY</h1>
         <div class="box">
           <div id="inv">
-              <img src="./assets/fb.png" alt="fb">
+            <img src="./assets/fb.png" alt="fb" />
           </div>
           <div id="inv" class="box2">
-              <img src="./assets/ig.png" alt="ig">
+            <img src="./assets/ig.png" alt="ig" />
           </div>
         </div>
       </div>

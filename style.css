@@ -1,14 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
 :root {
   --color-light: #fdfdfd;
   --color-blue: #1e90ff;
   --color-dark: #383838;
   --color-black: #000000;
+  --color-green: hsl(157, 60%, 53%);
 
   --grad-bg: linear-gradient(180deg, rgba(56, 56, 56, 1) 0%, rgba(0, 0, 0, 1) 40%);
-  /* --grad-bg: linear-gradient(180deg, #383838 0, #000000 23%); */
+
+  --album-left: 30%;
+  --album-top: 24%;
+
+  --released-top: 39%;
+  --released-left: 22.5%;
+
+  --profile-top: 25%;
+  --profile-left: 50%;
 }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -23,62 +35,172 @@ body {
 }
 
 .top_section {
-  height: 650px;
-  /* width: 1000px; */
+  height: 560px;
 }
 
-.top_section .cover {
-  /* background-image: url(./assets/album.jpg) no-repeat, var(--grad-bg); */
-  /* background-image: linear-gradient(to bottom, var(--grad-bg)), url("./assets/album.jpg"); */
-  background-image: linear-gradient(to bottom, rgba(56, 56, 56, 0) 80%, rgba(0, 0, 0, 1) 100%),
-    url("./assets/album.jpg");
+.top_section .container {
+  background: linear-gradient(to bottom, rgba(56, 56, 56, 0.6) 40%, rgba(0, 0, 0, 1) 100%), url(./assets/album.jpg);
   background-size: cover;
-  opacity: 0.3;
-  margin: auto;
-  /* background */
   height: 100%;
+
+  margin: auto;
 }
 
-.top_section .album img {
-  position: absolute;
-  top: 200px;
-  left: 24%;
-  object-fit: contain;
-  height: 320px;
+.top_section .container .content {
+  display: flex;
 }
 
-.top_section .album #released {
-  position: absolute;
-  font-size: 1rem;
+.top_section .container .content .leftside {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  padding-top: 170px;
+  margin-left: 5rem;
+}
+
+.top_section .container .content .leftside div p {
+  flex: 1;
+  font-size: 0.9rem;
   color: #fff;
+  transform-origin: bottom left;
   rotate: -90deg;
-  top: 380px;
-  left: 16%;
+  padding-left: 27px;
 }
-.top_section .menu #topdown{
-  position: absolute;
-  right: 18%;
-  top: 7%;
+
+.top_section .container .content .leftside img {
+  flex: 2;
+  width: 300px;
+}
+
+.top_section .container .content .rightside {
+  flex: 1;
+
+  padding-top: 170px;
+}
+
+.top_section .container .content .rightside .song {
+  font-family: "Lato", sans-serif;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.top_section .container .content .rightside .artist {
+  font-family: "Lato", sans-serif;
+  font-size: 1.9rem;
   color: #fff;
-  list-style-type:none;
+  font-weight: 800;
 }
-.middle_section{
-  position: absolute;
+
+.top_section .container .content .rightside .profile {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.top_section .container .content .rightside .profile img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 70px;
+
+  margin: 0rem 0.4rem;
+}
+
+.top_section .container .content .rightside .buttons {
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.top_section .container .content .rightside .buttons .btn {
+  display: flex;
+  gap: 0.2rem;
+
+  padding: 0.5rem 1rem;
+}
+
+#btn1 {
+  background: var(--color-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn2 {
+  border: 1px solid #fff;
+}
+
+.instinct {
+  color: var(--color-green);
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+.hamburger {
+  margin-bottom: 2rem;
+}
+
+/**/
+
+.top_section .menu #topdown {
+  color: #fff;
+  list-style-type: none;
+
+  padding: 20px 45px 0 0;
+}
+
+.top_section .menu #topdown li a img {
+  width: 22px;
+  margin-left: 2px;
+}
+
+.top_section .menu #topdown .hamburger a img {
+  width: 30px;
+  margin: 0;
+}
+.middle_section {
+  position: flex;
   color: #fff;
   bottom: 10%;
-  left:24%;
+  left: 24%;
 }
-.horiz{
+.horiz {
   display: inline-block;
 }
-.box{
-  position: absolute;
-  top: 80px;
+.box {
+  position: flex;
+  margin-top: 20px;
   background-color: #000;
-  display: inline-block;
+  display: flex;
+  margin-right: 30px;
+  margin-left: 140px;
 }
-.instinct {
-  color: var(--color-blue);
+.box img{
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  margin: 0;
+  padding: 5px;
+}
+.middle_section #streamText{
+  margin-bottom: 10px;
+  margin-left: 140px;
+  font-family:  "Maven Pro", monospace;
+  font-size: 45px;
+}
+.middle_section #trackText{
+  margin-top: 30px;
+  margin-left: 140px;
+  font-family: "Maven Pro", monospace;
+  font-size: 40px;
+}
+#inv {
+  filter: invert(100%);
 }
 #inv{
   filter:invert(100%);
