@@ -223,11 +223,11 @@ li {
   font-size: 45px;
 }
 .middle_section #trackText {
-  margin-top: 20px;
+  /*margin-top: 20px;
   margin-bottom: 100px;
-  margin-left: 140px;
+  margin-left: 140px;*/
   font-family: "Maven Pro", monospace;
-  font-size: 40px;
+  /*font-size: 40px;*/
 }
 
 .bottom_section {
