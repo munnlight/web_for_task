@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+
 :root {
   --color-light: #fdfdfd;
   --color-blue: #1e90ff;
@@ -159,6 +161,7 @@ li {
   margin-left: 2px;
 }
 
+
 .top_section .menu #topdown .hamburger a img {
   width: 30px;
   margin: 0;
@@ -173,13 +176,13 @@ li {
   display: inline-block;
 }
 .box {
-  position: flex;
-  margin-top: 20px;
+
   background-color: #000;
   display: flex;
   margin-right: 30px;
   margin-left: 140px;
 }
+
 .box img{
   width: 40px;
   height: 40px;
@@ -199,9 +202,7 @@ li {
   font-family: "Maven Pro", monospace;
   font-size: 40px;
 }
+
 #inv {
   filter: invert(100%);
-}
-#inv{
-  filter:invert(100%);
 }
