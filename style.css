@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 :root {
   --color-light: #fdfdfd;
   --color-blue: #1e90ff;
@@ -32,9 +32,10 @@
 
 body {
   background: var(--color-black);
-  border: solid 0.1px #fdfdfd;
-  height: 300vh;
+  /* border: solid 0.1px #fdfdfd; */
+  /* height: 300vh; */
   max-width: 1000px;
+  min-width: 800px;
 
   margin: auto;
 }
@@ -136,6 +137,7 @@ body {
 
 #btn2 {
   border: 1px solid #fdfdfd;
+  align-items: center;
 }
 
 .instinct {
@@ -171,8 +173,9 @@ li {
 .middle_section {
   position: flex;
   color: #fdfdfd;
-  bottom: 10%;
-  left: 24%;
+  width: 72%;
+
+  margin: auto;
 }
 .horiz {
   display: inline-block;
@@ -180,22 +183,23 @@ li {
 .box {
   background-color: #000;
   display: flex;
-  margin-right: 30px;
-  margin-left: 140px;
 }
 .box1 {
   position: flex;
   margin-top: 30px;
   background-color: #000;
-  display: flex;
-  margin-right: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto;
   font-family: "Maven Pro", monospace;
 }
 .box1 img {
   padding: 20px;
   margin-left: 0px;
-  width: 150px;
-  height: 150px;
+  width: 15vw;
+  max-width: 150px;
+
+  object-fit: cover;
   margin: 0;
 }
 .box1 #topText {
@@ -218,7 +222,7 @@ li {
 }
 .middle_section #streamText {
   margin-bottom: 10px;
-  margin-left: 140px;
+  /* margin-left: 140px; */
   font-family: "Maven Pro", monospace;
   font-size: 45px;
 }
@@ -231,11 +235,16 @@ li {
 }
 
 .bottom_section {
-  position: flex;
+  /* position: flex; */
+  /* display: flex; */
+  width: 72%;
+
   color: #fdfdfd;
-  bottom: 10%;
-  margin-left: 140px;
+  margin: auto;
+  /* padding: 3rem; */
+  /* margin-left: 140px; */
 }
+
 .bottom_section #releaseText {
   font-family: "Maven Pro", monospace;
   font-size: 45px;
@@ -249,7 +258,7 @@ li {
   margin-top: 100px;
   border-top: 1px solid #fdfdfd;
 }
-.line1{
+.line1 {
   margin-right: 110px;
   margin-top: 10px;
   border-bottom: 1px solid #fdfdfd;
@@ -276,7 +285,7 @@ li {
 #track_list .container .tracks {
   align-items: center;
   display: grid;
-  grid-template-columns: 0.75fr 1fr 3fr 5fr 1fr 1fr;
+  grid-template-columns: 0.75fr 1fr 3fr 6fr 1fr 0.5fr;
   font-family: "Lato";
 
   margin: 1rem 0;
@@ -295,26 +304,56 @@ li {
 #track_list .container .tracks .names .song {
   font-weight: 550;
 }
-.footer{
+.footer {
   display: flex;
   margin-top: 10px;
   font-family: "Maven Pro", monospace;
 }
-.footer1{
+.footer1 {
   left: 50%;
 }
-.footer2{
+.footer2 {
   margin-left: 100px;
   right: 50%;
 }
-.footer3{
+.footer3 {
   margin-left: 100px;
-  color:silver;
+  color: silver;
   font-family: "Truculenta", monospace;
 }
-.footer3 input{
-  background-color:silver;
+.footer3 input {
+  background-color: silver;
 }
-.realfooter{
+.realfooter {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .top_section {
+    height: 440px;
+  }
+
+  .top_section .container .content .leftside img {
+    width: 220px;
+  }
+
+  .top_section .container .content .rightside .song {
+    font-size: 2.2rem;
+  }
+
+  .top_section .container .content .rightside .artist {
+    font-size: 1.4rem;
+  }
+
+  .top_section .container .content .rightside .profile img {
+    width: 55px;
+  }
+
+  .top_section .container .content .rightside .buttons {
+    font-size: 0.8rem;
+  }
+
+  .top_section .container .content .rightside .buttons .btn {
+    padding: 0.3rem 0.7rem;
+  }
 }
