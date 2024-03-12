@@ -203,8 +203,7 @@ li {
 }
 .box1 img {
   padding: 20px;
-  margin-left: 0px;
-  width: 15vw;
+  min-width: 15vw;
   max-width: 150px;
 
   object-fit: cover;
@@ -420,18 +419,74 @@ li {
 
 @media screen and (max-width: 600px) {
   .top_section .container .content {
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    justify-self: flex-end;
+  }
+
+  .top_section .container .content .leftside {
+    padding: 0;
+    margin: 30px 0 10px 0;
   }
 
   .top_section .container .content .rightside {
     padding: 0;
+  /* } */
+    padding-left: 30vw;
   }
 
-  .top_section .container .content .leftside img {
+  .top_section .container .content .leftside {
     /* width: 1px; */
+    display: none;
   }
 
   .top_section .container .content .leftside div p {
     font-size: 0.5rem;
+  }
+}
+
+
+  .top_section .menu #topdown {
+    padding: 15px 10px 0 0;
+  }
+
+  .top_section .menu #topdown .hamburger a img {
+    width: 19px;
+  }
+
+  .top_section .menu #topdown li a img {
+    width: 14px;
+    margin: 0;
+  }
+
+  .box1 {
+    /* display: block; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box1 img {
+    width: 70vw;
+    /* display: none; */
+  }
+
+  .tracks div {
+    font-size: 0.6rem;
+  }
+
+  .tracks img {
+    width: 10px;
+    /* font-size: 0.1rem; */
+  }
+
+  #track_list .container .tracks img:nth-child(2) {
+    width: 1rem;
+  }
+
+  #track_list .container .tracks .names .singer {
+    font-size: 0.4rem;
+  }
+
+  :root {
+    --header-size: 1.2rem;
   }
 }
