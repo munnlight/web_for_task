@@ -22,6 +22,9 @@
 
   --profile-top: 25%;
   --profile-left: 50%;
+
+  --header-st: "Maven Pro", monospace;
+  --header-size: 2.7rem;
 }
 
 * {
@@ -35,7 +38,7 @@ body {
   /* border: solid 0.1px #fdfdfd; */
   /* height: 300vh; */
   max-width: 1000px;
-  min-width: 800px;
+  /* min-width: 400px; */
 
   margin: auto;
 }
@@ -69,6 +72,7 @@ body {
   flex: 1;
   font-size: 0.9rem;
   color: #fdfdfd;
+  color: #fdfdfd;
   transform-origin: bottom left;
   rotate: -90deg;
   padding-left: 27px;
@@ -88,6 +92,7 @@ body {
 .top_section .container .content .rightside .song {
   font-family: "Lato", sans-serif;
   -webkit-text-stroke: 1px #fdfdfd;
+  -webkit-text-stroke: 1px #fdfdfd;
   color: transparent;
   font-size: 3rem;
   font-weight: 800;
@@ -97,6 +102,7 @@ body {
 .top_section .container .content .rightside .artist {
   font-family: "Lato", sans-serif;
   font-size: 1.9rem;
+  color: #fdfdfd;
   color: #fdfdfd;
   font-weight: 800;
 }
@@ -116,6 +122,7 @@ body {
 
 .top_section .container .content .rightside .buttons {
   font-weight: 800;
+  color: #fdfdfd;
   color: #fdfdfd;
   display: flex;
   gap: 0.5rem;
@@ -155,6 +162,7 @@ li {
 /**/
 
 .top_section .menu #topdown {
+  color: #fdfdfd;
   color: #fdfdfd;
   list-style-type: none;
 
@@ -206,17 +214,23 @@ li {
   font-weight: bold;
   font-size: 20px;
   margin-left: 15px;
+  margin-left: 15px;
 }
 .box1 #bottomText {
   font-weight: lighter;
   font-size: 10px;
+  margin-left: 15px;
   margin-left: 15px;
 }
 
 .box img {
   width: 50px;
   height: 50px;
+  width: 50px;
+  height: 50px;
   border: 2px solid black;
+  margin: 0px;
+  padding: 10px;
   margin: 0px;
   padding: 10px;
 }
@@ -224,13 +238,15 @@ li {
   margin-bottom: 10px;
   /* margin-left: 140px; */
   font-family: "Maven Pro", monospace;
-  font-size: 45px;
+  font-size: var(--header-size);
 }
 .middle_section #trackText {
+  /*margin-top: 20px;
   /*margin-top: 20px;
   margin-bottom: 100px;
   margin-left: 140px;*/
   font-family: "Maven Pro", monospace;
+  /*font-size: 40px;*/
   /*font-size: 40px;*/
 }
 
@@ -247,7 +263,7 @@ li {
 
 .bottom_section #releaseText {
   font-family: "Maven Pro", monospace;
-  font-size: 45px;
+  font-size: var(--header-size);
 }
 .nowrap {
   font-family: "Rajdhani", monospace;
@@ -274,10 +290,12 @@ li {
 
   margin: auto;
   margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 #track_list h2 {
-  font-size: 2.4rem;
+  font-size: var(--header-size);
+  font-family: var(--header-st);
 
   margin: 2.5rem 0 2.2rem 0;
 }
@@ -285,7 +303,7 @@ li {
 #track_list .container .tracks {
   align-items: center;
   display: grid;
-  grid-template-columns: 0.75fr 1fr 3fr 6fr 1fr 0.5fr;
+  grid-template-columns: 0.75fr 1fr 5fr 6fr 1fr 0.5fr;
   font-family: "Lato";
 
   margin: 1rem 0;
@@ -328,7 +346,7 @@ li {
   margin-top: 30px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .top_section {
     height: 440px;
   }
@@ -355,5 +373,65 @@ li {
 
   .top_section .container .content .rightside .buttons .btn {
     padding: 0.3rem 0.7rem;
+  }
+
+  :root {
+    --header-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .top_section .container .content .leftside img {
+    width: 200px;
+  }
+
+  .top_section .container .content .rightside .song {
+    font-size: 1.9rem;
+  }
+
+  .top_section .container .content .rightside .artist {
+    font-size: 1.2rem;
+  }
+
+  .top_section .container .content .rightside .profile img {
+    width: 45px;
+  }
+
+  .top_section .container .content .rightside .buttons {
+    font-size: 0.4rem;
+  }
+
+  .top_section .container .content .rightside .buttons .btn {
+    padding: 0.2rem 0.3rem;
+  }
+
+  .box1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .box1 img {
+    width: 24vw;
+  }
+
+  :root {
+    --header-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top_section .container .content {
+    flex-direction: column;
+  }
+
+  .top_section .container .content .rightside {
+    padding: 0;
+  }
+
+  .top_section .container .content .leftside img {
+    /* width: 1px; */
+  }
+
+  .top_section .container .content .leftside div p {
+    font-size: 0.5rem;
   }
 }
