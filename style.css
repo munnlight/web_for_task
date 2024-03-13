@@ -34,7 +34,7 @@
 }
 
 body {
-  background: var(--color-black);
+  background: var(--color-dark);
   max-width: 1000px;
 
   margin: auto;
