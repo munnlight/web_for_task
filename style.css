@@ -35,10 +35,7 @@
 
 body {
   background: var(--color-black);
-  /* border: solid 0.1px #fdfdfd; */
-  /* height: 300vh; */
   max-width: 1000px;
-  /* min-width: 400px; */
 
   margin: auto;
 }
@@ -159,8 +156,6 @@ li {
   margin-bottom: 2rem;
 }
 
-/**/
-
 .top_section .menu #topdown {
   color: #fdfdfd;
   color: #fdfdfd;
@@ -202,8 +197,8 @@ li {
   font-family: "Maven Pro", monospace;
 }
 .box1 img {
-  padding: 20px;
-  min-width: 15vw;
+  padding: 20px 5px;
+  width: 15vw;
   max-width: 150px;
 
   object-fit: cover;
@@ -235,29 +230,15 @@ li {
 }
 .middle_section #streamText {
   margin-bottom: 10px;
-  /* margin-left: 140px; */
   font-family: "Maven Pro", monospace;
   font-size: var(--header-size);
 }
-.middle_section #trackText {
-  /*margin-top: 20px;
-  /*margin-top: 20px;
-  margin-bottom: 100px;
-  margin-left: 140px;*/
-  font-family: "Maven Pro", monospace;
-  /*font-size: 40px;*/
-  /*font-size: 40px;*/
-}
 
 .bottom_section {
-  /* position: flex; */
-  /* display: flex; */
   width: 72%;
 
   color: #fdfdfd;
   margin: auto;
-  /* padding: 3rem; */
-  /* margin-left: 140px; */
 }
 
 .bottom_section #releaseText {
@@ -283,7 +264,6 @@ li {
 }
 
 #track_list {
-  /* display: flex; */
   color: #fff;
   width: 72%;
 
@@ -321,28 +301,69 @@ li {
 #track_list .container .tracks .names .song {
   font-weight: 550;
 }
+
 .footer {
-  display: flex;
-  margin-top: 10px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
   font-family: "Maven Pro", monospace;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+
+  padding: 2rem 0;
 }
-.footer1 {
-  left: 50%;
+
+.footer p {
+  font-size: 100%;
 }
-.footer2 {
-  margin-left: 100px;
-  right: 50%;
+
+.footer div {
+  display: flex;
+  flex-direction: column;
 }
+
 .footer3 {
-  margin-left: 100px;
   color: silver;
   font-family: "Truculenta", monospace;
 }
 .footer3 input {
-  background-color: silver;
+  color: #fff;
+  background-color: #111;
+  border: 1px solid #444;
+
+  margin-top: 15px;
 }
-.realfooter {
+/* .realfooter {
   margin-top: 30px;
+} */
+
+.realfooter {
+  /* display: flex; */
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+.realfooter .align {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.realfooter .align p {
+  font-size: 0.7rem;
+}
+
+.realfooter .align div img {
+  position: flex;
+  width: 25px;
+}
+.realfooter .text .end {
+  font-size: 0.5rem;
+  color: #fff;
+  width: 65%;
+
+  margin: auto;
 }
 
 @media screen and (max-width: 820px) {
@@ -372,6 +393,16 @@ li {
 
   .top_section .container .content .rightside .buttons .btn {
     padding: 0.3rem 0.7rem;
+  }
+
+  .bottom_section .footer div p {
+    font-size: 0.8rem;
+  }
+
+  .bottom_section .footer .footer3 input {
+    font-size: 0.8rem;
+    height: 70%;
+    width: 80%;
   }
 
   :root {
@@ -412,6 +443,33 @@ li {
     width: 24vw;
   }
 
+  .bottom_section .footer div p {
+    font-size: 0.5rem;
+  }
+
+  .bottom_section .footer .footer3 input {
+    font-size: 0.5rem;
+    padding: 0.2rem;
+
+    margin-top: 10px;
+  }
+
+  .realfooter .text .end {
+    font-size: 0.3rem;
+    color: #fff;
+    width: 65%;
+
+    margin: auto;
+  }
+
+  .realfooter {
+    margin-top: 7px;
+  }
+
+  .realfooter .align p {
+    font-size: 0.45rem;
+  }
+
   :root {
     --header-size: 2rem;
   }
@@ -419,8 +477,6 @@ li {
 
 @media screen and (max-width: 600px) {
   .top_section .container .content {
-    /* flex-direction: column; */
-    /* justify-content: center; */
     justify-self: flex-end;
   }
 
@@ -434,7 +490,6 @@ li {
   }
 
   .top_section .container .content .leftside {
-    /* width: 1px; */
     display: none;
   }
 
@@ -456,13 +511,12 @@ li {
   }
 
   .box1 {
-    /* display: block; */
     grid-template-columns: repeat(2, 1fr);
   }
 
   .box1 img {
-    width: 70vw;
-    /* display: none; */
+    width: 30vw;
+    max-width: 150px;
   }
 
   .tracks div {
@@ -471,7 +525,6 @@ li {
 
   .tracks img {
     width: 10px;
-    /* font-size: 0.1rem; */
   }
 
   #track_list .container .tracks img:nth-child(2) {
@@ -480,6 +533,17 @@ li {
 
   #track_list .container .tracks .names .singer {
     font-size: 0.4rem;
+  }
+
+  .bottom_section .footer div p {
+    font-size: 0.35rem;
+  }
+
+  .bottom_section .footer .footer3 input {
+    font-size: 0.35rem;
+    padding: 0.1rem;
+
+    margin-top: 10px;
   }
 
   :root {
